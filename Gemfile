@@ -5,4 +5,4 @@ gem 'sinatra'
 gem 'shotgun'
 gem 'dotenv'
 gem 'slim'
-gem 'ketchum'
+gem "poke-api"
