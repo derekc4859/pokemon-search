@@ -4,7 +4,7 @@ require 'net/http'
 require 'json'
 require 'pp'
 
-url = 'http://pokeapi.co/api/v2/pokemon/'
+url = 'http://pokeapi.co/api/v2/pokemon/' #change ending to match pages with corresponding pokemon
 uri = URI(url)
 response = Net::HTTP.get(uri)
 result = JSON.parse(response)
