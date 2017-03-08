@@ -1,0 +1,11 @@
+body{
+    background-image: url("https://upload.wikimedia.org/wikipedia/en/3/39/Pokeball.PNG");
+}
+form{
+    text-align: center;
+}
+h1{
+    font-family: cursive;
+    color: yellow;
+    text-shadow: blue;
+}
