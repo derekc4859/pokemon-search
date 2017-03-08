@@ -4,11 +4,13 @@ require 'net/http'
 require 'json'
 require 'pp'
 
-url = 'http://pokeapi.co/api/v2/pokemon/' #change ending to match pages with corresponding pokemon
+poke_num = 24
+#url = 'http://pokeapi.co/api/v2/pokemon/' #change ending to match pages with corresponding pokemon
 uri = URI(url)
 response = Net::HTTP.get(uri)
 result = JSON.parse(response)
-puts result["results"][19]["name"]
+puts result["results"][0]["name"]
+
 
 #require 'poke-api'
 
@@ -18,3 +20,4 @@ puts result["results"][19]["name"]
 #puts loader.find(169)
 # => { "name" => "Crobat", "national_id" => 169, ... }
 #Testing
+
