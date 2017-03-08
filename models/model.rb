@@ -8,7 +8,7 @@ url = 'http://pokeapi.co/api/v2/pokemon/'
 uri = URI(url)
 response = Net::HTTP.get(uri)
 result = JSON.parse(response)
-#puts result["results"][0]["name"]
+puts result["results"][19]["name"]
 
 #require 'poke-api'
 
