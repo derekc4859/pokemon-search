@@ -20,8 +20,12 @@ puts result["results"][21]["name"]
 #Testing
 
 
+# Has to iterate through each different URL to find the id matching the users input
 
  def get_name(id)
      
  end
  
+
+
+
