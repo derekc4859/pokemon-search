@@ -18,3 +18,6 @@ result = JSON.parse(response)
 #puts loader.find(169)
 # => { "name" => "Crobat", "national_id" => 169, ... }
 #Testing
+
+
+# Has to iterate through each different URL to find the id matching the users input
