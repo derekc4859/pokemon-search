@@ -4,13 +4,13 @@ require 'net/http'
 require 'json'
 require 'pp'
 
-url = 'http://pokeapi.co/api/v2/pokemon/' #change ending to match pages with corresponding pokemon
+url = 'http://pokeapi.co/api/v2/pokemon/?limit=150' #change ending to match pages with corresponding pokemon
 uri = URI(url)
 response = Net::HTTP.get(uri)
 result = JSON.parse(response)
 puts result["results"][21]["name"]
 
-#require 'poke-api'
+require 'poke-api'
 
 #loader = Poke::API::Loader.new("pokemon")
 #loader.all
@@ -21,11 +21,13 @@ puts result["results"][21]["name"]
 
 
 # Has to iterate through each different URL to find the id matching the users input
-
- def get_name(id)
-     
- end
+class ID
+ attr_reader :id
  
-
+   def initialize()
+    
+   end
+ 
+end
 
 
