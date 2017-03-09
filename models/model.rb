@@ -5,11 +5,11 @@ require 'json'
 require 'pp'
 
 
-url = 'http://pokeapi.co/api/v2/pokemon/' #change ending to match pages with corresponding pokemon
-uri = URI(url)
-response = Net::HTTP.get(uri)
-result = JSON.parse(response)
-puts result["results"][0]["name"]
+        url = 'http://pokeapi.co/api/v2/pokemon/?offset=20' #change ending to match pages with corresponding pokemon
+        uri = URI(url)
+        response = Net::HTTP.get(uri)
+        result = JSON.parse(response)
+        puts result["results"][0]["name"]
 
 
 
