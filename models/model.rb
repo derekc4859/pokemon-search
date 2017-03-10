@@ -5,6 +5,7 @@ require 'json'
 require 'pp'
 
 
+
 #url = 'http://pokeapi.co/api/v2/pokemon/?limit=150' #change ending to match pages with corresponding pokemon
 #uri = URI(url)
 #response = Net::HTTP.get(uri)
@@ -38,6 +39,8 @@ def find_poke_info
 end
 puts find_pokemon_name(1)
 puts find_poke_info
+
+
 
 #loader = Poke::API::Loader.new("pokemon")
 #loader.all
