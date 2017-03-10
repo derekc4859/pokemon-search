@@ -10,7 +10,7 @@ response = Net::HTTP.get(uri)
 result = JSON.parse(response)
 puts result["results"][21]["name"]
 
-require 'poke-api'
+
 
 #loader = Poke::API::Loader.new("pokemon")
 #loader.all

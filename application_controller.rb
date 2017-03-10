@@ -1,6 +1,6 @@
 require 'dotenv/load'
 require 'bundler'
-require 'poke-api'
+
 
 Bundler.require
 
