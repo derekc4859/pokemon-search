@@ -8,7 +8,7 @@ url = 'http://pokeapi.co/api/v2/pokemon/?limit=150' #change ending to match page
 uri = URI(url)
 response = Net::HTTP.get(uri)
 result = JSON.parse(response)
-puts result["results"][21]["name"]
+puts result["results"]
 
 
 
