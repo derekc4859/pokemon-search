@@ -1,11 +1,13 @@
 body{
-    background-image: url("https://upload.wikimedia.org/wikipedia/en/3/39/Pokeball.PNG");
+   /*background: #00FFFF url("http://cdn.bulbagarden.net/upload/8/84/Professor_Oak_XY.png") no-repeat;*/
+   margin-top: 50%;
+    
 }
 form{
     text-align: center;
 }
 h1{
     font-family: cursive;
-    color: yellow;
+    color: red;
     text-shadow: blue;
 }
