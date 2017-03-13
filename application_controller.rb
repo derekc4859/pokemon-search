@@ -12,7 +12,7 @@ class ApplicationController < Sinatra::Base
     erb:index
   end
   
-  # get '/result' do
+  # post '/result' do
   #   erb:result
   # end
 end
