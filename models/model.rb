@@ -10,7 +10,6 @@ require 'pp'
 class Name
     
     attr_accessor :num , :form , :shiny_form , :print_name , :typing
-    
     def initialize(num)
         @num = num.to_i
     end
