@@ -54,22 +54,21 @@ class Name
 end
 
 
-#end
-#def poke_sprites
- #  url = @link["forms"][0]["url"]
- #  uri = URI(url) 
-#    response = Net::HTTP.get(uri)
-   # @sprites = JSON.parse(response)
-  # @form = @sprites["sprites"]["front_default"]
- #  @shiny_form = @sprites["sprites"]["front_shiny"]
-#end
+def poke_sprites
+   url = @link["forms"][0]["url"]
+   uri = URI(url) 
+    response = Net::HTTP.get(uri)
+    @sprites = JSON.parse(response)
+   @form = @sprites["sprites"]["front_default"]
+   @shiny_form = @sprites["sprites"]["front_shiny"]
+end
 
-# user_number = Name.new("150")
-# puts user_number.num
-# puts user_number.find_poke_name
-# puts user_number.new_info
-# user_number.poke_sprites
-# puts user_number.shiny_form
-# puts user_number.form
-# puts user_number.poke_type
+user_number = Name.new("150")
+puts user_number.num
+puts user_number.find_poke_name
+puts user_number.new_info
+user_number.poke_sprites
+puts user_number.shiny_form
+puts user_number.form
+puts user_number.poke_type
 
