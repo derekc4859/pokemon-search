@@ -20,7 +20,8 @@ class ApplicationController < Sinatra::Base
    @user_pokemon.poke_sprites
    @user_pokemon.shiny_form
    @user_pokemon.form
-   
+   @user_pokemon.poke_type
+   @user_pokemon.typing
     erb :result
    end
 end

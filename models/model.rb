@@ -8,7 +8,7 @@ require 'pp'
 #@user_name = "bulbasaur"
 class Name
     
-    attr_accessor :num , :form , :shiny_form , :print_name
+    attr_accessor :num , :form , :shiny_form , :print_name , :typing
     
     def initialize(num)
         @num = num.to_i
@@ -70,4 +70,3 @@ end
  # puts user_number.shiny_form
  # puts user_number.form
  # puts user_number.poke_type
- # puts user_number.print_name

@@ -19,15 +19,14 @@
     
     <div class="container-fluid">
 
-    
      
 
       <h1><%=@user_pokemon.print_name %></h1>
-      <img src="<%= @user_pokemon%>">
-      <img src="<%= @user_pokemon%>">
+      <img src="<%= @user_pokemon.form %>">
+      <img src="<%=@user_pokemon.shiny_form %>">
+      <h2><%=@user_pokemon.typing %></h2>
      <!-- <h2><#Print out more information about the pokemon</h2> -->
-     <p><%= #Print out height%></p>
-      <p><%= #Print out weight%></p>
+     
     </div>
     
   </body>
