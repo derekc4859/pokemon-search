@@ -9,7 +9,7 @@ require 'pp'
 #@user_name = "bulbasaur"
 class Name
     
-    attr_accessor :num , :form , :shiny_form
+    attr_accessor :num , :form , :shiny_form , :print_name
     
     def initialize(num)
         @num = num.to_i
@@ -32,7 +32,6 @@ class Name
 
     def new_info
      url = @result["results"][@real_num]["url"]
-    # url = "http://pokeapi.co/api/v2/pokemon/1/"
      uri = URI(url) 
      response = Net::HTTP.get(uri)
      @link = JSON.parse(response)
@@ -63,12 +62,13 @@ def poke_sprites
    @shiny_form = @sprites["sprites"]["front_shiny"]
 end
 
-user_number = Name.new("150")
-puts user_number.num
-puts user_number.find_poke_name
-puts user_number.new_info
-user_number.poke_sprites
-puts user_number.shiny_form
-puts user_number.form
-puts user_number.poke_type
 
+ # user_number = Name.new("150")
+ # puts user_number.num
+ # puts user_number.find_poke_name
+ # puts user_number.new_info
+ # user_number.poke_sprites
+ # puts user_number.shiny_form
+ # puts user_number.form
+ # puts user_number.poke_type
+ # puts user_number.print_name
