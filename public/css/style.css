@@ -1,10 +1,8 @@
 body{
-   /*background: #00FFFF url("http://cdn.bulbagarden.net/upload/8/84/Professor_Oak_XY.png") no-repeat;*/
-    
-}
-form{
+   background-color: #00FFFF;
     text-align: center;
 }
+
 h1{
     font-family: arial;
     color: red;
