@@ -53,15 +53,6 @@ class Name
 end
 
 
-def poke_sprites
-   url = @link["forms"][0]["url"]
-   uri = URI(url) 
-    response = Net::HTTP.get(uri)
-    @sprites = JSON.parse(response)
-   @form = @sprites["sprites"]["front_default"]
-   @shiny_form = @sprites["sprites"]["front_shiny"]
-end
-
 
  # user_number = Name.new("150")
  # puts user_number.num
