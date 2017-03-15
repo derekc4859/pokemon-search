@@ -9,7 +9,7 @@ require 'pp'
 #@user_name = "bulbasaur"
 class Name
     
-    attr_accessor :num , :form , :shiny_form , :print_name
+    attr_accessor :num , :form , :shiny_form , :print_name , :typin
     
     def initialize(num)
         @num = num.to_i
