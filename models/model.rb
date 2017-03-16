@@ -6,10 +6,10 @@ require 'json'
 require 'pp'
 
 
-
+#@user_name = "bulbasaur"
 class Name
     
-    attr_accessor :num , :form , :shiny_form , :print_name , :typing
+    attr_accessor :num , :form , :shiny_form , :print_name , :typing, :height
     def initialize(num)
         @num = num.to_i
     end
@@ -50,13 +50,14 @@ class Name
     end
 
     def poke_type
-        #Grabs the pokemon's type by going through the API
+        #Grabs the pokemon's type by going through the 
      @typing = @link["types"][0]["type"]["name"]
     end
+
 end
 
 
-#
+
 
 
 #   user_number = Name.new("1")
