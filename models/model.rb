@@ -53,6 +53,7 @@ class Name
         #Grabs the pokemon's type by going through the API
      @typing = @link["types"][0]["type"]["name"]
     end
+    
 end
 
 
