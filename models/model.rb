@@ -54,6 +54,11 @@ class Name
      @typing = @link["types"][0]["type"]["name"]
     end
 
+
+    def poke_height #this should be here
+    @height= @link["height"]
+    end
+
 end
 
 
