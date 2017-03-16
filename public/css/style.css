@@ -1,10 +1,18 @@
 body{
    background-color: #00FFFF;
     text-align: center;
+    font-family: "Times New Roman";
 }
 
 h1{
-    font-family: arial;
+    
     color: red;
     text-shadow: blue;
+    text-transform: uppercase;
 }
+h2{
+    color: black;
+    text-shadow: blue;
+    text-transform: uppercase;
+}
+
