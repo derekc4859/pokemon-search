@@ -14,19 +14,25 @@
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <!-- custom JS -->
     <script src="js/script.js"></script>
+    
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   </head>
   <body>
     
     <div class="container-fluid">
 
-      <h1><%=@user_pokemon.print_name %></h1>
+      <h1><%=@user_pokemon.print_name %></h1> 
       <img src="<%= @user_pokemon.form %>" height="360" width="360">
       <img src="<%=@user_pokemon.shiny_form %>" height="360" width="360">
+
       
-      <h3>Type</h3>
+      <h3>Type</h3> 
       <h3 style="text-transform: uppercase"><%=@user_pokemon.typing %></h3>
       
       <h3>Height in Decimeters: <%=@user_pokemon.height %>dm</h3>
+
+      
+
      <!-- <h2><#Print out more information about the pokemon</h2> -->
     <!--  <a href="index.erb" method="get" action="/">Back!</a>    -->
       <a href="/" style="font-size:34px">Want to search another one?</a>
