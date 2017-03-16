@@ -6,6 +6,7 @@ require 'json'
 require 'pp'
 
 
+
 class Name
     
     attr_accessor :num , :form , :shiny_form , :print_name , :typing
@@ -55,7 +56,7 @@ class Name
 end
 
 
-
+#
 
 
 #   user_number = Name.new("1")
