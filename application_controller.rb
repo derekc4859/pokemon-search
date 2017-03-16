@@ -22,6 +22,7 @@ class ApplicationController < Sinatra::Base
    @user_pokemon.form
    @user_pokemon.poke_type
    @user_pokemon.typing
+   @user_pokemon.poke_height
     erb :result
    end
 end

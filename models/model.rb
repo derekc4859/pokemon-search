@@ -8,7 +8,7 @@ require 'pp'
 
 class Name
     
-    attr_accessor :num , :form , :shiny_form , :print_name , :typing
+    attr_accessor :num , :form , :shiny_form , :print_name , :typing, :height
     def initialize(num)
         @num = num.to_i
     end
@@ -52,16 +52,21 @@ class Name
         #Grabs the pokemon's type by going through the 
      @typing = @link["types"][0]["type"]["name"]
     end
-    
+
+    def poke_height
+    @height= @link["height"]
+    end
 end
 
 
 
 
- # user_number = Name.new("150")
- # puts user_number.num
- # puts user_number.find_poke_name
- # puts user_number.new_info
- # user_number.poke_sprites
- # puts user_number.shiny_form
- # puts user_number.form
+#   user_number = Name.new("1")
+#   puts user_number.num
+#   puts user_number.find_poke_name
+#   puts user_number.new_info
+#   user_number.poke_sprites
+#   puts user_number.shiny_form
+#   puts user_number.form
+# puts user_number.poke_height
+
