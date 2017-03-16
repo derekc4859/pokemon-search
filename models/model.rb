@@ -61,6 +61,7 @@ end
 
 
 
+
 #   user_number = Name.new("1")
 #   puts user_number.num
 #   puts user_number.find_poke_name
