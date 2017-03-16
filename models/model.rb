@@ -49,7 +49,9 @@ class Name
     def poke_type
      @typing = @link["types"][0]["type"]["name"]
     end
+    
 end
+
 
 
 
