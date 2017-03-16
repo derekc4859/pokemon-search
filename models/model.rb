@@ -6,7 +6,6 @@ require 'json'
 require 'pp'
 
 
-#@user_name = "bulbasaur"
 class Name
     
     attr_accessor :num , :form , :shiny_form , :print_name , :typing
