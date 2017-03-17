@@ -1,6 +1,7 @@
 
 #http://pokeapi.co/api/v2/pokemon/
 
+#Without requiring these, there would be no application because they wouldn't know where to go
 require 'net/http'
 require 'json'
 require 'pp'
@@ -25,7 +26,7 @@ class Name
       end
       #Below searches API for correct pokemon
       @real_num = number
-      url = 'http://pokeapi.co/api/v2/pokemon/?limit=150' #change ending to match pages with corresponding pokemon
+      url = 'http://pokeapi.co/api/v2/pokemon/?limit=150' #change ending to match pages with corresponding pokemon ID
       uri = URI(url)
       response = Net::HTTP.get(uri)
       @result = JSON.parse(response)
@@ -47,8 +48,8 @@ class Name
      uri = URI(url) 
      response = Net::HTTP.get(uri)
      @sprites = JSON.parse(response)
-     @form = @sprites["sprites"]["front_default"]
-     @shiny_form = @sprites["sprites"]["front_shiny"]
+     @form = @sprites["sprites"]["front_default"]   #Gets normal form
+     @shiny_form = @sprites["sprites"]["front_shiny"]   #Gets shiny form
     end
 
     def poke_type
@@ -58,11 +59,11 @@ class Name
 
 
     def poke_height #this should be here
-    @height= @link["height"]
+    @height= @link["height"]    #grabs the height from the API link
     end
 
     def poke_weight
-    @weight= @link["weight"]
+    @weight= @link["weight"]    #grabs the weight from the API link
     end
     
 end

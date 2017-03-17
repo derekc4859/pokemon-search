@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
+    <!-- Title Tags change name in browser tab-->
     <title>Gotta Catch'em All!</title>
     <!-- bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -20,7 +21,7 @@
   <body>
     
     <div class="container-fluid">
-
+        <!-- Used embedded Ruby to output infor from API -->
       <h1><%=@user_pokemon.print_name %></h1> 
       <img src="<%= @user_pokemon.form %>" height="360" width="360">
       <img src="<%=@user_pokemon.shiny_form %>" height="360" width="360">
