@@ -7,7 +7,6 @@ require 'json'
 require 'pp'
 
 
-#@user_name = "bulbasaur"
 class Name
     
 
@@ -53,7 +52,7 @@ class Name
     end
 
     def poke_type
-        #Grabs the pokemon's type by going through the 
+        #Grabs the pokemon's type by going through the APL link of a specific pokemon
      @typing = @link["types"][0]["type"]["name"]
     end
 
