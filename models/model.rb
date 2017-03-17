@@ -9,7 +9,9 @@ require 'pp'
 #@user_name = "bulbasaur"
 class Name
     
-    attr_accessor :num , :form , :shiny_form , :print_name , :typing, :height
+
+    attr_accessor :num , :form , :shiny_form , :print_name , :typing, :height, :weight
+    
     def initialize(num)
         @num = num.to_i
     end
@@ -59,6 +61,10 @@ class Name
     @height= @link["height"]
     end
 
+    def poke_weight
+    @weight= @link["weight"]
+    end
+    
 end
 
 
