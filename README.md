@@ -1,1 +1,1 @@
-##Hello World
+##WELCOME TO OUR POKEMON API!
